@@ -274,15 +274,15 @@
 
       .pad-bl {
         margin-left: -8px;
-        width:100vw;
-        height:35.92vw;
+        width: 100vw;
+        height: 35.92vw;
         max-width: 1225px;
         max-height: 440px;
       }
 
       .block-graph-slider {
         width: fit-content;
-        overflow: hidden;
+        /* overflow: hidden; */
         position: relative;
       }
 
@@ -342,8 +342,8 @@
         width: 100%;
         overflow: hidden;
         position: relative;
-        /* cursor: col-resize; */
-        cursor: url(https://raw.githubusercontent.com/bpcambrian/perennial-web/main/mous.svg), auto;
+        cursor: url(https://raw.githubusercontent.com/bpcambrian/perennial-web/main/mous.svg),
+          auto;
       }
 
       .opas-circle,
@@ -436,6 +436,11 @@
       @media all and (max-width: 480px) {
         .pad-bl-mob {
           display: block;
+          max-width: 336px;
+          max-height: 177px;
+          width: 89.6vw;
+          height: 47.2vw;
+          margin-left: -10px;
         }
 
         .pad-bl {
@@ -447,7 +452,7 @@
         }
 
         .block-text-opasity {
-          width: 87.20vw;
+          width: 87.2vw;
           height: 26.93vw;
           line-height: 10.13vw;
           top: inherit;
@@ -481,11 +486,12 @@
           font-size: 6.4vw;
         }
         .gallery {
-          width: 80px !important;
+          width: 21.33vw !important;
         }
 
         .gallery-dot {
-          height: 2.67vw;
+          height: 1.60vw;
+          margin-top: -0.80vw;
         }
 
         .gallery-dots {
@@ -559,8 +565,6 @@
       <!-- svg chart -->
       <svg
         class="pad-bl-mob"
-        width="89.6vw"
-        height="47.2vw"
         viewBox="0 0 336 177"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -595,7 +599,7 @@
           fill="white"
           fill-opacity="0.2"
         />
-        <g clip-path="url(#clip0_1489_13412)">
+        <g clip-path="url(#clip0_1856_24755)">
           <path
             d="M9 18H310"
             stroke="white"
@@ -636,170 +640,160 @@
             stroke-linecap="round"
             stroke-dasharray="4.38 5.84"
           />
-          <path
-            d="M9 177H310"
-            stroke="white"
-            stroke-opacity="0.05"
-            stroke-width="1.46078"
-            stroke-linecap="round"
-            stroke-dasharray="4.38 5.84"
-          />
         </g>
         <path
           d="M305.694 9.84024L303.92 16.4704L301.767 28.1233L300.5 30.3334L298.854 39.1736L295.307 48.6165L292.14 51.4293L290.367 60.0685L287.074 61.274L283.78 62.4795L279.093 64.6895L277.067 67.3014L270.987 69.5115L263.387 73.5297L261.107 76.9453H256.8L253.38 80.5617L249.2 86.3882L241.726 90.2055L239.446 93.4201H237.166L233.113 99.2466L225.893 104.069L224.246 109.493L218.42 113.11L214.24 124.361L210.313 126.772L203.853 137.42L197.266 142.644L194.353 150.881L184.979 152.69L176.873 153.091L173.326 154.096L170.286 152.69L167.373 152.087L164.079 151.685L160.786 152.087L156.352 150.881L152.806 148.872L150.399 148.069L146.979 147.064C144.529 146.817 142.436 146.454 140.519 146.26C138.179 146.024 136.037 145.959 133.046 145.658L122.152 148.069L119.366 149.877L116.024 150.688L110.879 149.073L106.952 148.872L103.152 147.064L99.0987 146.059H83.7719L79.5919 146.863L75.6652 147.868L70.4718 148.872L69.0784 150.688L63.5051 149.475H58.0584L54.005 148.069L51.345 146.26L46.7849 146.662L42.4782 147.868L33.9915 146.26H9.41797V177H310V1.80371L308.734 5.42015L305.694 9.84024Z"
-          fill="url(#paint0_linear_1489_13412)"
+          fill="url(#paint0_linear_1856_24755)"
         />
         <path
           d="M9.41797 146.26H33.9915L42.4782 147.868L46.7849 146.662L51.345 146.26L54.005 148.069L58.0584 149.475H63.5051L69.0784 150.688L70.4718 148.872L75.6652 147.868L79.5919 146.863L83.7719 146.059H99.0987L103.152 147.064L106.952 148.872L110.879 149.073L116.024 150.688L119.366 149.877L122.152 148.069L133.046 145.658C136.037 145.959 138.179 146.024 140.519 146.26C142.436 146.454 144.529 146.817 146.979 147.064L150.399 148.069L152.806 148.872L156.352 150.881L160.786 152.087L164.079 151.685L167.373 152.087L170.286 152.69L173.326 154.096L176.873 153.091L184.979 152.69L194.353 150.881L197.266 142.644L203.853 137.42L210.313 126.772L214.24 124.361L218.42 113.11L224.246 109.493L225.893 104.069L233.113 99.2466L237.166 93.4201H239.446L241.726 90.2055L249.2 86.3882L253.38 80.5617L256.8 76.9453H261.107L263.387 73.5297L270.987 69.5115L277.067 67.3014L279.093 64.6896L283.78 62.4795L287.074 61.274L290.367 60.0685L292.14 51.4293L295.307 48.6165L298.854 39.1736L300.5 30.3334L301.767 28.1233L303.92 16.4704L305.694 9.84024L308.734 5.42015L310 1.80371"
-          stroke="url(#paint1_linear_1489_13412)"
+          stroke="url(#paint1_linear_1856_24755)"
           stroke-width="2"
           stroke-linecap="round"
         />
-
-        <g class="opas-circle-mob" filter="url(#filter0_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter0_d_1856_24755)">
           <circle cx="12.5" cy="146.5" r="5.5" fill="white" />
           <circle
             cx="12.5"
             cy="146.5"
             r="4.5"
-            stroke="url(#paint2_linear_1489_13412)"
+            stroke="url(#paint2_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter1_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter1_d_1856_24755)">
           <circle cx="129.5" cy="145.5" r="5.5" fill="white" />
           <circle
             cx="129.5"
             cy="145.5"
             r="4.5"
-            stroke="url(#paint3_linear_1489_13412)"
+            stroke="url(#paint3_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter2_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter2_d_1856_24755)">
           <circle cx="165.5" cy="152.5" r="5.5" fill="white" />
           <circle
             cx="165.5"
             cy="152.5"
             r="4.5"
-            stroke="url(#paint4_linear_1489_13412)"
+            stroke="url(#paint4_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter3_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter3_d_1856_24755)">
           <circle cx="168.5" cy="153.5" r="5.5" fill="white" />
           <circle
             cx="168.5"
             cy="153.5"
             r="4.5"
-            stroke="url(#paint5_linear_1489_13412)"
+            stroke="url(#paint5_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter4_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter4_d_1856_24755)">
           <circle cx="209.5" cy="128.5" r="5.5" fill="white" />
           <circle
             cx="209.5"
             cy="128.5"
             r="4.5"
-            stroke="url(#paint6_linear_1489_13412)"
+            stroke="url(#paint6_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter5_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter5_d_1856_24755)">
           <circle cx="218.5" cy="111.5" r="5.5" fill="white" />
           <circle
             cx="218.5"
             cy="111.5"
             r="4.5"
-            stroke="url(#paint7_linear_1489_13412)"
+            stroke="url(#paint7_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter6_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter6_d_1856_24755)">
           <circle cx="231.5" cy="99.5" r="5.5" fill="white" />
           <circle
             cx="231.5"
             cy="99.5"
             r="4.5"
-            stroke="url(#paint8_linear_1489_13412)"
+            stroke="url(#paint8_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter7_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter7_d_1856_24755)">
           <circle cx="234.5" cy="95.5" r="5.5" fill="white" />
           <circle
             cx="234.5"
             cy="95.5"
             r="4.5"
-            stroke="url(#paint9_linear_1489_13412)"
+            stroke="url(#paint9_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter8_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter8_d_1856_24755)">
           <circle cx="247.5" cy="85.5" r="5.5" fill="white" />
           <circle
             cx="247.5"
             cy="85.5"
             r="4.5"
-            stroke="url(#paint10_linear_1489_13412)"
+            stroke="url(#paint10_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter9_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter9_d_1856_24755)">
           <circle cx="269.5" cy="69.5" r="5.5" fill="white" />
           <circle
             cx="269.5"
             cy="69.5"
             r="4.5"
-            stroke="url(#paint11_linear_1489_13412)"
+            stroke="url(#paint11_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter10_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter10_d_1856_24755)">
           <circle cx="275.5" cy="67.5" r="5.5" fill="white" />
           <circle
             cx="275.5"
             cy="67.5"
             r="4.5"
-            stroke="url(#paint12_linear_1489_13412)"
+            stroke="url(#paint12_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter11_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter11_d_1856_24755)">
           <circle cx="277.5" cy="64.5" r="5.5" fill="white" />
           <circle
             cx="277.5"
             cy="64.5"
             r="4.5"
-            stroke="url(#paint13_linear_1489_13412)"
+            stroke="url(#paint13_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter12_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter12_d_1856_24755)">
           <circle cx="282.5" cy="60.5" r="5.5" fill="white" />
           <circle
             cx="282.5"
             cy="60.5"
             r="4.5"
-            stroke="url(#paint14_linear_1489_13412)"
+            stroke="url(#paint14_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-        <g class="opas-circle-mob" filter="url(#filter13_d_1489_13412)">
+        <g class="opas-circle-mob" filter="url(#filter13_d_1856_24755)">
           <circle cx="304.5" cy="16.5" r="5.5" fill="white" />
           <circle
             cx="304.5"
             cy="16.5"
             r="4.5"
-            stroke="url(#paint15_linear_1489_13412)"
+            stroke="url(#paint15_linear_1856_24755)"
             stroke-width="2"
           />
         </g>
-
         <defs>
           <filter
-            id="filter0_d_1489_13412"
+            id="filter0_d_1856_24755"
             x="0"
             y="138"
             width="25"
@@ -823,17 +817,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter1_d_1489_13412"
+            id="filter1_d_1856_24755"
             x="117"
             y="137"
             width="25"
@@ -857,17 +851,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter2_d_1489_13412"
+            id="filter2_d_1856_24755"
             x="153"
             y="144"
             width="25"
@@ -891,17 +885,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter3_d_1489_13412"
+            id="filter3_d_1856_24755"
             x="156"
             y="145"
             width="25"
@@ -925,17 +919,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter4_d_1489_13412"
+            id="filter4_d_1856_24755"
             x="197"
             y="120"
             width="25"
@@ -959,17 +953,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter5_d_1489_13412"
+            id="filter5_d_1856_24755"
             x="206"
             y="103"
             width="25"
@@ -993,17 +987,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter6_d_1489_13412"
+            id="filter6_d_1856_24755"
             x="219"
             y="91"
             width="25"
@@ -1027,17 +1021,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter7_d_1489_13412"
+            id="filter7_d_1856_24755"
             x="222"
             y="87"
             width="25"
@@ -1061,17 +1055,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter8_d_1489_13412"
+            id="filter8_d_1856_24755"
             x="235"
             y="77"
             width="25"
@@ -1095,17 +1089,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter9_d_1489_13412"
+            id="filter9_d_1856_24755"
             x="257"
             y="61"
             width="25"
@@ -1129,17 +1123,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter10_d_1489_13412"
+            id="filter10_d_1856_24755"
             x="263"
             y="59"
             width="25"
@@ -1163,17 +1157,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter11_d_1489_13412"
+            id="filter11_d_1856_24755"
             x="265"
             y="56"
             width="25"
@@ -1197,17 +1191,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter12_d_1489_13412"
+            id="filter12_d_1856_24755"
             x="270"
             y="52"
             width="25"
@@ -1231,17 +1225,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <filter
-            id="filter13_d_1489_13412"
+            id="filter13_d_1856_24755"
             x="292"
             y="8"
             width="25"
@@ -1265,17 +1259,17 @@
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_1489_13412"
+              result="effect1_dropShadow_1856_24755"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_1489_13412"
+              in2="effect1_dropShadow_1856_24755"
               result="shape"
             />
           </filter>
           <linearGradient
-            id="paint0_linear_1489_13412"
+            id="paint0_linear_1856_24755"
             x1="16.3943"
             y1="148.05"
             x2="309.748"
@@ -1286,7 +1280,7 @@
             <stop offset="1" stop-color="#B85941" stop-opacity="0.05" />
           </linearGradient>
           <linearGradient
-            id="paint1_linear_1489_13412"
+            id="paint1_linear_1856_24755"
             x1="165.341"
             y1="130.011"
             x2="290.923"
@@ -1297,7 +1291,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint2_linear_1489_13412"
+            id="paint2_linear_1856_24755"
             x1="6.94527"
             y1="149.715"
             x2="16.5674"
@@ -1308,7 +1302,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint3_linear_1489_13412"
+            id="paint3_linear_1856_24755"
             x1="123.945"
             y1="148.715"
             x2="133.567"
@@ -1319,7 +1313,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint4_linear_1489_13412"
+            id="paint4_linear_1856_24755"
             x1="159.945"
             y1="155.715"
             x2="169.567"
@@ -1330,7 +1324,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint5_linear_1489_13412"
+            id="paint5_linear_1856_24755"
             x1="162.945"
             y1="156.715"
             x2="172.567"
@@ -1341,7 +1335,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint6_linear_1489_13412"
+            id="paint6_linear_1856_24755"
             x1="203.945"
             y1="131.715"
             x2="213.567"
@@ -1352,7 +1346,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint7_linear_1489_13412"
+            id="paint7_linear_1856_24755"
             x1="212.945"
             y1="114.715"
             x2="222.567"
@@ -1363,7 +1357,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint8_linear_1489_13412"
+            id="paint8_linear_1856_24755"
             x1="225.945"
             y1="102.715"
             x2="235.567"
@@ -1374,7 +1368,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint9_linear_1489_13412"
+            id="paint9_linear_1856_24755"
             x1="228.945"
             y1="98.7148"
             x2="238.567"
@@ -1385,7 +1379,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint10_linear_1489_13412"
+            id="paint10_linear_1856_24755"
             x1="241.945"
             y1="88.7148"
             x2="251.567"
@@ -1396,7 +1390,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint11_linear_1489_13412"
+            id="paint11_linear_1856_24755"
             x1="263.945"
             y1="72.7148"
             x2="273.567"
@@ -1407,7 +1401,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint12_linear_1489_13412"
+            id="paint12_linear_1856_24755"
             x1="269.945"
             y1="70.7148"
             x2="279.567"
@@ -1418,7 +1412,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint13_linear_1489_13412"
+            id="paint13_linear_1856_24755"
             x1="271.945"
             y1="67.7148"
             x2="281.567"
@@ -1429,7 +1423,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint14_linear_1489_13412"
+            id="paint14_linear_1856_24755"
             x1="276.945"
             y1="63.7148"
             x2="286.567"
@@ -1440,7 +1434,7 @@
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
           <linearGradient
-            id="paint15_linear_1489_13412"
+            id="paint15_linear_1856_24755"
             x1="298.945"
             y1="19.7148"
             x2="308.567"
@@ -1450,7 +1444,7 @@
             <stop stop-color="#FFD24B" />
             <stop offset="1" stop-color="#B85941" />
           </linearGradient>
-          <clipPath id="clip0_1489_13412">
+          <clipPath id="clip0_1856_24755">
             <rect
               width="301"
               height="159"
