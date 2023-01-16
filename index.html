@@ -134,11 +134,13 @@
             this.containerNode.classList.add(GalleryDraggableClassName),
             window.addEventListener("pointermove", this.dragging);
         }
+
         stopDrag() {
           window.removeEventListener("pointermove", this.dragging),
             this.containerNode.classList.remove(GalleryDraggableClassName),
             this.changeCurrentSlide();
         }
+
         dragging(e) {
           this.dragX = e.pageX;
           var t = this.dragX - this.clickX,
@@ -155,6 +157,9 @@
               this.currentSlide < this.size - 1 &&
               ((this.currentSlideWasChanged = !0),
               (this.currentSlide = this.currentSlide + 1));
+
+          // console.log(this.currentSlide)
+          // console.log(t)
         }
         clickDots(e) {
           var s = e.target.closest("button");
@@ -424,6 +429,12 @@
 
       .gallery-nav {
         display: none;
+      }
+
+      @media screen and (max-height: 680px) {
+        .block-slider {
+          margin-top: 5px;
+        }
       }
 
       @media all and (max-width: 480px) {
@@ -1451,7 +1462,7 @@
       </svg>
 
       <svg
-      class="pad-bl"
+        class="pad-bl"
         viewBox="0 0 1225 395"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
