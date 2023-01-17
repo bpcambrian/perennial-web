@@ -202,12 +202,12 @@
             GalleryDotActiveClassName
           );
 
-          // // add class mob year
-          // let number = document.querySelectorAll(".slide");
+          // // add class mob and pc year
+          let number = document.querySelectorAll(".slide");
 
-          // for (let e = 0; e < number.length; e++)
-          //   number[e].classList.remove("focus");
-          // number[this.currentSlide].classList.add("focus");
+          for (let e = 0; e < number.length; e++)
+            number[e].classList.remove("focus");
+            number[this.currentSlide].classList.add("focus");
 
           // add class pc graph
           let spot = document.querySelectorAll(".opas-circle");
