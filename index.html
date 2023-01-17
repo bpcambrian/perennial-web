@@ -202,12 +202,12 @@
             GalleryDotActiveClassName
           );
 
-          // add class mob year
-          let number = document.querySelectorAll(".slide");
+          // // add class mob year
+          // let number = document.querySelectorAll(".slide");
 
-          for (let e = 0; e < number.length; e++)
-            number[e].classList.remove("focus");
-          number[this.currentSlide].classList.add("focus");
+          // for (let e = 0; e < number.length; e++)
+          //   number[e].classList.remove("focus");
+          // number[this.currentSlide].classList.add("focus");
 
           // add class pc graph
           let spot = document.querySelectorAll(".opas-circle");
@@ -216,14 +216,14 @@
             spot[e].classList.remove("opas");
           spot[this.currentSlide].classList.add("opas");
 
-          // add class mob graph
-          let spotmob = document.querySelectorAll(".opas-circle-mob");
+          // // add class mob graph
+          // let spotmob = document.querySelectorAll(".opas-circle-mob");
 
-          for (let e = 0; e < spotmob.length; e++)
-            spotmob[e].classList.remove("opas");
-          spotmob[this.currentSlide].classList.add("opas");
+          // for (let e = 0; e < spotmob.length; e++)
+          //   spotmob[e].classList.remove("opas");
+          // spotmob[this.currentSlide].classList.add("opas");
 
-          // add class mob text graph
+          // add class mob and pc text graph
           let text = document.querySelectorAll(".text-info-year");
 
           for (let e = 0; e < text.length; e++)
@@ -270,7 +270,7 @@
   <body>
     <style>
       body {
-        background: black;
+        background: #191919;
       }
 
       .pad-bl-mob {
@@ -438,6 +438,13 @@
       }
 
       @media all and (max-width: 480px) {
+        .block-graph-slider{
+          display: none;
+        }
+        
+      }
+
+      /* @media all and (max-width: 480px) {
         .pad-bl-mob {
           display: block;
           max-width: 336px;
@@ -505,7 +512,7 @@
           top: 0;
           border-top: 0.8vw solid #393837;
         }
-      }
+      } */
     </style>
 
     <div class="block-graph-slider">
@@ -570,7 +577,7 @@
         </div>
       </div>
       <!-- svg chart -->
-      <svg
+      <!-- <svg
         class="pad-bl-mob"
         viewBox="0 0 336 177"
         fill="none"
@@ -1460,7 +1467,7 @@
             />
           </clipPath>
         </defs>
-      </svg>
+      </svg> -->
 
       <svg
         class="pad-bl"
