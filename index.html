@@ -207,7 +207,7 @@
 
           for (let e = 0; e < number.length; e++)
             number[e].classList.remove("focus");
-            number[this.currentSlide].classList.add("focus");
+          number[this.currentSlide].classList.add("focus");
 
           // add class pc graph
           let spot = document.querySelectorAll(".opas-circle");
@@ -438,10 +438,9 @@
       }
 
       @media all and (max-width: 480px) {
-        .block-graph-slider{
+        .block-graph-slider {
           display: none;
         }
-        
       }
 
       /* @media all and (max-width: 480px) {
